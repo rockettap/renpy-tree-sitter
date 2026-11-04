@@ -1,0 +1,38 @@
+==================
+Python block and one-line statement
+==================
+
+define e = Character("Eileen")
+default points = 0
+
+init python:
+    def add(value):
+        return value + 1
+
+label start:
+    $ points = add(points)
+    return
+
+---
+
+(source_file
+  (define_statement
+    (variable_name
+      (identifier))
+    (python_content))
+  (default_statement
+    (variable_name
+      (identifier))
+    (python_content))
+  (init_statement
+    (indented_block
+      (python_content)
+      (python_content)))
+  (label_statement
+    (label_name
+      (dotted_name
+        (identifier)))
+    (block
+      (python_line
+        (python_content))
+      (return_statement))))
