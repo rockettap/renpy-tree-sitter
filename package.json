@@ -18,6 +18,6 @@
   "author": "Oleksandr; original grammar by M. A. Azzam (ZeynTheDev)",
   "license": "MIT",
   "devDependencies": {
-    "tree-sitter-cli": "^0.25.10"
+    "tree-sitter-cli": "^0.27.1"
   }
 }
